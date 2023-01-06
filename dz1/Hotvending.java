@@ -33,11 +33,12 @@ public class Hotvending extends Vending{
         int deposit = 0;
         while (true) {
             int money = scanner.nextInt();
-            System.out.printf("Вы внесли %d руб. ", money);
+            System.out.printf("Вы внесли %d руб.\n", money);
             deposit += money;
             if (deposit < product.getPrice()) {
-                System.out.printf("Внесено недостаточно средств");
-            } else {
+                System.out.println("Внесено не достаточно средств !\nЦена товара: "+ product.getPrice()+ "\nВнесено: " + deposit);
+            } 
+            else {
                 System.out.println("Покупка совершена!");
                 getProduct(product);
                 break;

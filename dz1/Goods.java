@@ -34,7 +34,7 @@ public class Goods extends Vending{
             System.out.printf("Вы внесли %d руб. ", money);
             deposit += money;
             if (deposit < product.getPrice()) {
-                System.out.printf("Внесено недостаточно средств");
+                System.out.println("Внесено не достаточно средств !\nЦена товара: "+ product.getPrice()+ "\nВнесено: " + deposit);
             } else {
                 System.out.println("Покупка совершена!");
                 getProduct(product);
