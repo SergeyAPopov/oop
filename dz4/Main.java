@@ -30,7 +30,7 @@ public class Main {
 
     }
     public static <T> Iterable<T> filter(Iterable<T> array, IsGood<T> isGood){
-            ArrayList<T> result = new ArrayList<T>();
+            List<T> result = new ArrayList<T>();
             for (T itElement : array) {
                 if(isGood.isGood(itElement)){
                     result.add(itElement);
