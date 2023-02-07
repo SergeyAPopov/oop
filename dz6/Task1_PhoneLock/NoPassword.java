@@ -14,7 +14,7 @@ public class NoPassword implements Unlocker{
 
     @Override
     public void unlock() {
-        System.out.println("Блокировка отсутствует!\n Телефон разблокирован.");
+        System.out.println("Блокировка отсутствует!\nТелефон разблокирован\n");
     }
 
 

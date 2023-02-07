@@ -21,5 +21,14 @@ public class Main {
     public static void main(String[] args) {
         NoPassword noPassword = new NoPassword("null");
         noPassword.unlock();
+
+        PincodePassword pincode = new PincodePassword(1111);
+        pincode.unlock();
+
+        FingerprintPassword fingerprint = new FingerprintPassword("ZZZZ");
+        fingerprint.unlock();
+
+        FaceIDPassword faceID = new FaceIDPassword("ZZZZ");
+        faceID.unlock();
     }
 }
