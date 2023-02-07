@@ -18,5 +18,8 @@ private String faceID; // на случай лица
 */
 
 public class Main {
-    
+    public static void main(String[] args) {
+        NoPassword noPassword = new NoPassword("null");
+        noPassword.unlock();
+    }
 }
